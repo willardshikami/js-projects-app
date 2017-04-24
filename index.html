@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="projects" lang="en">
+
+<head>
+    <title>PROJECTS APP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Load Angular JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!--Load Angular JS resource module-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.min.js">
+    </script>
+    <!--Load Angular JS route module-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js">
+    </script>
+    <!--Load Firebase JavaScript sdk-->
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+    <!--Load Angular JavaScript bindings for Firebase-->
+    <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+    <!--Contains controllers which specifies the applications behaviour-->
+    <script src="js/project.js"></script>
+    <script src="js/project-list.js"></script>
+</head>
+
+<body>
+    <h2>JavaScript Projects</h2>
+    <!--Where we will load our partial pages/views, the surrounding page will remain static as the UI changes in this section, in this case, we will switch between the list of projects and the form to add a new list-->
+    <div ng-view></div>
+</body>
+</html>
